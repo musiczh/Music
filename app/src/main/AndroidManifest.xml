@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a17280.music">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/music_64_img"
+        android:label="简易音乐播放器"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleInstance"
+            android:label="播放列表">
+
+        </activity>
+
+        <service
+            android:name=".service.MediaService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.HistoryActivity"
+            android:label="历史播放记录"/>
+        <activity android:name=".activity.PlayActivity"
+            android:launchMode="singleTask"
+            android:label="简易音乐播放器">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sort_local_item"
+        android:icon="@drawable/sort_local_white_64_img"
+        app:showAsAction = "ifRoom"
+        android:title="扫描本地歌曲"
+        />
+    <item
+        android:id="@+id/history_item"
+        android:title="历史播放记录"
+        android:icon="@drawable/history_128_white_img"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/back_item"
+        android:icon="@drawable/back_128_white_img"
+        android:title="back"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+
+
+
+
+
+</menu>

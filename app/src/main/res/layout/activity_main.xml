@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/main_toolbar"
+        android:background="#10ffffff"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:label="播放列表"/>
+
+
+
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00000000"
+        android:layout_weight="1"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/play_list_bottom_layout"
+        android:orientation="horizontal"
+        android:background="#20ffffff">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_gravity="center"
+            android:id="@+id/main_singer_image"
+            android:src="@drawable/singer_img"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_song_name_text"
+            android:text="当前无歌曲播放"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            />
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/main_previous_button"
+            android:background="@drawable/previous_img_big"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/main_pause_play_img"
+            android:src="@drawable/play_img_big"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/main_next_button"
+            android:background="@drawable/next_img_big"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
